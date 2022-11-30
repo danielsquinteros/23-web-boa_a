@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form>
+        <input 
+            type="text"
+            name="apellido"
+            placeholder="Ingresa el apellido"
+            maxlength="10"
+            minlength="2"
+            required
+        />
+        <br>
+        <br>
+        <input 
+            type="password"
+            name="contraseña"
+            placeholder="Ingresa la contraseña"
+            maxlength="10"
+            minlength="2"
+            required
+        />
+        <br>
+        <br>
+        <input 
+            type="number"
+            name="edad"
+            placeholder="Ingresa tu edad"
+            min="2"
+            max="10"
+        />
+        <br>
+        <br>
+        <!-- LABEL -->
+        <!-- Opción 1 -->
+        <label>
+            Aceptas los terminos y condiciones
+            <input 
+                type="checkbox"
+                name="condiciones"
+            />
+        </label>
+        <br>
+        <br>
+           
+        <!-- Opción 2 -->
+        <label
+            for="fmarketing"
+        >Aceptas envios emails</label>
+        <input 
+            id="fmarketing"
+            type="checkbox"
+            name="marketing"
+        />
+        <br>
+        <br>
+        <h6>Ingresa tu rango de edad</h6>
+        <label>
+            0 - 10 años
+            <input
+                type="radio"
+                name="edad"
+                value="0-10"
+            />
+        </label>
+        <br>
+        <label>
+            11 - 20 años
+            <input
+            type="radio"
+            name="edad"
+            value="11-20"
+            />
+        </label>
+        <br>
+        <label>
+            21 - 30 años
+            <input
+            type="radio"
+            name="edad"
+            value="21-30"
+            />
+        </label>
+        <br>
+        <br>
+        <input
+            type="time"
+            name="hora"
+            min="09:00"
+            max="18:00"
+        />
+        <br>
+        <br>
+        <select name="animal">
+            <option value="perro">perro</option>
+            <option value="gato">gato</option>
+            <option value="conejo">conejo</option>
+        </select>
+        <br>
+        <br>
+        <textarea
+            name="observaciones"
+            rows="10"
+            cols="40"
+        >
+        </textarea>
+        <br>
+        <br>
+        <input
+            name="imagen_de_notas"
+            type="file"
+        />
+        <br>
+        <br>
+        <button type="submit">
+            Enviar
+        </button>
+    </form>
+</body>
+</html>
