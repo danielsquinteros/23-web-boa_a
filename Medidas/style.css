@@ -1,0 +1,51 @@
+/* Médidas absoluta */
+/*
+1. px -> 1/94 de una pulgadas
+2. pt -> punto -> 1/72 de un pulgada
+3. pc -> picas -> 12 puntos
+4. in -> pulgadads
+5. cm 
+6. mm
+*/
+
+h2{
+    font-size: 28px;
+}
+
+/* Medidas relativas */
+/* 
+1. %
+2. vh
+3. vw
+4. em
+5. rem
+*/
+/* porcentaje */
+.container{
+    border: 4px solid black;
+    /* width: 100% de la pantala  */
+    height: 500px;
+}
+
+.item{
+    width: 50%; /* 250px */
+    height: 100%; /* 725px */
+    border: 3px solid red;
+}
+
+/* vw, vh -> viewport */
+.container-viewport{
+    width: 20vw; /*100% de la ventana*/
+    height: 50vh; /* 50vh -> 1000px -> 50% -> 500px de alto */
+    border: 5px solid aqua;
+}
+
+.vw{
+    font-size: 10vw;
+}
+
+.box-black{
+    height: 3vh;
+    width: 65vw;
+    background-color: black;
+}

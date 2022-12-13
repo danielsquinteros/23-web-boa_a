@@ -1,0 +1,23 @@
+.display-block{
+    display: block;
+    background-color: red;
+    width: 200px;
+    margin: 20px;
+    padding: 50px;
+}
+
+.display-inline-block{
+    display: inline-block;
+    background-color: cadetblue;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.display-inline{
+    display: inline;
+    background-color: rgba(20, 40, 60, 0.5);
+    width: 2000px;
+    margin: 100px;
+    padding: 100px;
+}

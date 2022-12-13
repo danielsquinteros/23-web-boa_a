@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+/* OPCIÓN 1 */
+.grid-container{
+    display: grid;
+    gap: 5px;
+    width: 90vw;
+    grid-template-columns: repeat(3, 1fr); /* 100vw divido en dos */
+    grid-template-rows: repeat(3, 200px);
+}
+.item-1{
+    background-color: aqua;
+    grid-column: 1 / span 3; /* le defino los espacios que quiero ocupar */
+    grid-row: 1/2;
+}
+
+.item-2{
+    background-color: red;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.item-3{
+    background-color: blueviolet;
+    grid-column: 1 / span 3;
+    grid-row: 3 / 4;
+}
+
+.item-4{
+    background-color: aquamarine;
+    grid-column:  3 / span 2;
+    grid-row: 2/3;
+}
+
+
+/* OPCIÓN 2 */
+.grid-area{
+    display: grid;
+    gap: 10px;
+    /* filas / columnas */
+    grid-template: 100px 100px / 200px 200px 300px;
+    grid-template-areas: "header header manzana"
+                         "pera pera manzana";
+}
+
+.area-1{
+    background-color: aquamarine;
+    grid-area: header;
+}
+.area-2{
+    background-color: bisque;
+    grid-area: manzana;
+}
+.area-3{
+    background-color: chocolate;
+    grid-area: pera;
+}
