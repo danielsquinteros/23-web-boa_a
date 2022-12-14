@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+}
+
+.button{
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 20px 160px 20px 160px;
+    border-radius: 20px;
+}
+.button:hover{
+    color: black;
+    background-color: white;
+    transition: 1s all;
+}
+
+/* FORMATO QUE SIEMRE VA */
+/* @media screen and (){
+
+} */
+
+/* max-width recomiendo ir desde el ancho de pantalla más alto al menor */
+/* @media screen and (max-width: 520px){
+    body{
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 320px){
+    body{
+        background-color: aqua;
+    }
+} */
+
+/* min-width recomiendo partir desde el ancho más pequeño al mayor*/
+/* @media screen and (min-width: 320px) {
+    body {
+        background-color: aqua;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    body {
+        background-color: red;
+    }
+} */
+
+/*combinando las dos opciones */
+/* max-width -> hasta */
+/* min-width -> desde */
+@media screen and (max-width: 768px) and (min-width: 480px){
+    body{
+        background-color: blue;
+    }
+    .button{
+        padding: 20px 60px 20px 60px;
+    }
+}
