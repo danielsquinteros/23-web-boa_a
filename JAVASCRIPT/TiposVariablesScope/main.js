@@ -34,3 +34,35 @@ console.log(arreglo);
 arreglo.push('Lampara')
 console.log(arreglo);
 
+// SCOPE
+
+const country = 'Argentina' //var es de alcance local
+
+{
+    console.log('Condominio', country);
+    {
+        console.log('Parcela', country);
+        {   
+            console.log('La casa de la parcela', country);
+        }
+   } 
+}
+
+
+{   
+    const carcel_1 = 'Colina 1' // Local
+    let reo_1 = 'Daniel' // Local
+}
+
+
+{
+    const carcel_2 = 'Colina 2' // Local
+    let reo_2 = 'Lautaro' //Local
+    {
+        console.log(reo_2, 'puede ir al baño');
+        {
+            let reo_3 = 'Daniel 2'
+            console.log(reo_2, 'puede ir a la taza del baño');
+        }
+    }
+}
