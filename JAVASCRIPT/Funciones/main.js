@@ -60,3 +60,13 @@ suma(50, 50)
 
 const resultado = suma(20, 30);
 console.log(`Este es el resultado`, resultado);
+
+const areaRectangulo = (base, altura) => {
+    const area = base * altura
+    return area;
+}
+
+const areaResultado = areaRectangulo(4, 2)
+
+console.log(areaResultado);
+console.log(areaRectangulo(4, 2));
