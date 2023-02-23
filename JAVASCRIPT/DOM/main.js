@@ -41,7 +41,7 @@ const parrafoSelector = document.querySelectorAll('#parrafo')
 // console.log(parrafoSelector);
 
 const padre = document.getElementById('padre')
-console.log(padre);
+// console.log(padre);
 
 //childElementCount: cuenta todos los hijos
 const hijosDelPadre = padre.childElementCount
@@ -57,7 +57,7 @@ const todosLosHijo = padre.children
 
 
 const hijo1 = document.getElementsByClassName('hijo-1')
-console.log('padreeee', hijo1[0].parentElement);
+// console.log('padreeee', hijo1[0].parentElement);
 
 
 //MODIFICAR ELEMENTOS
@@ -68,18 +68,30 @@ console.log('padreeee', hijo1[0].parentElement);
 //MODIFICAR ELEMENTOS
 
 // Para modificar los elementos primero y SI O SI, tengo que obtenerlo
-// elemento.innerHTML =  'nuevo html' -> Cambiar el contenido de un elemento HTML
-// elemento.attribute = 'nuevo valor'	-> Cambiar el atributo de un elemento HTML
-// elemento.style.property = 'nuevo estilo' ->	Cambiar el estilo de un elemento HTML
-// elemento.setAttribute(atributo, 'valor') -> También podemos cambiar atributos con el método setAttribute()
+// 1. elemento.innerHTML ✅ =  'nuevo html' -> Cambiar el contenido de un elemento HTML
+// 2. elemento.attributes✅ -> me muestra los atributos que tiene un elemento de HTML
+// 3. elemento.style.property✅ = 'nuevo estilo' ->	Cambiar el estilo de un elemento HTML
+// 4. elemento.setAttribute(atributo, 'valor')✅ -> También podemos cambiar atributos con el método setAttribute()
+// 5. element.className✅ = 'nuevas clases'
+// 6. element.textContent✅ = 'nuevo texto'
 
+const padreNuevo = document.getElementById('padre')
+padreNuevo.innerHTML = padreNuevo.innerHTML + '<p id="hijo-5">Hijo 5 (JS)</p>'
+// padreNuevo.innerHTML += '<p class="hijo-5">Hijo 5 (JS)</p>'
 
-// element.className = 'nuevas clases'✅
-// element.textContent = 'nuevo texto'✅
+const hijo5 = document.getElementById('hijo-5')
+hijo5.className = 'background-color-aqua'
+console.log(hijo5);
+hijo5.textContent = 'Hijo 5'
+hijo5.setAttribute('class', 'background-color-red');
 
-//getElementsByTagName -> arreglo 
-console.log(body);
-body[0].className = 'background-color-aqua'
+hijo5.style.backgroundColor = '#FF00FF'
+hijo5.style.fontSize = '30px'
+hijo5.style.fontFamily = 'Arial'
 
+ 
+const sub = document.getElementById('subtitulo')
 
-parrafo.textContent = 'Hola desde JS'
+sub.style.fontSize = '60px';
+sub.textContent = 'Titulo h2 JS';
+sub.style.backgroundColor = 'red';
