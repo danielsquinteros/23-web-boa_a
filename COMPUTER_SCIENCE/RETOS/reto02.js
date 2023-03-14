@@ -185,3 +185,35 @@ const database_choferes = [
 // **Nivel de pregunta D+++**
 // - La empresa busca disminuir la cantidad de choferes para semana santa (Primer semana de abril) ya que quiere que la mayoría pueda disfrutar con su familia, por ende, te piden sacar el promedio de pasajeros que suben en el recorrido A2 la primera semana de abril (por cada 40 pasajeros se necesita un chofer).
 //     - ¿Cuántos choferes se necesitarán para la primera semana de abril?
+
+
+
+const choferes_A2 = [];
+
+database_choferes.forEach((chofer) => {
+    if(chofer.recorrido === "A2"){        
+        choferes_A2.push(chofer)
+    }
+})
+
+
+let chofer_reclamos = {
+    name: undefined,
+    reclamos: 0,
+};
+
+database_choferes.forEach((chofer) => {
+    if(chofer.recorrido === "A2"){
+        if(chofer_reclamos.reclamos > chofer.reclamos){
+             console.log('NOOOOO quiero que los reemplaces, dado que', chofer_reclamos.name,  (chofer_reclamos.reclamos), 'es mayor que', chofer.name, (chofer.reclamos))
+        } else {
+            console.log('Quiero que los reemplaces, dado que', chofer_reclamos.name, (chofer_reclamos.reclamos),'es menor que', chofer.name, (chofer.reclamos))
+            chofer_reclamos = {
+                name: chofer.name,
+                reclamos: chofer.reclamos
+            }
+        }
+    }
+})
+
+console.log('El que tiene mas reclamos es: ', chofer_reclamos)
