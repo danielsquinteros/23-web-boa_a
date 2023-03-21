@@ -105,3 +105,15 @@ const gerente01 = new Gerente ('Daniel', 'Quinteros', 'TI', 10000000, ['vacacion
 console.log(gerente01)
 console.log(gerente01.getDepartamento)
 console.log(gerente01.dimeNombreYBeneficios())
+
+
+//¿Cómo yo puedo obtener el prototipo de un objeto?
+//__
+
+const gerente = {
+    name: "daniel",
+    __proto__: "jeje"
+}
+console.log(gerente.name)
+
+console.log(gerente01.__proto__.__proto__)
