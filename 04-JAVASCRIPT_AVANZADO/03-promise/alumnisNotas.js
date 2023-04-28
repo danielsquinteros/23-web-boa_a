@@ -57,6 +57,16 @@ const obtenerNotasById = (id) => {
     return promise
 }
 
+// Promise indivual
+obtenerAlumniById(3)
+.then((res) => {
+    console.log('1. Alumno Encontrado', res)
+})
+.catch(err => {
+    console.log('4. hubo un error', err)
+})
+
+//Promesas una después de otra 
 obtenerAlumniById(3)
 .then((res) => {
     console.log('1. Alumno Encontrado', res)
