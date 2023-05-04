@@ -37,13 +37,13 @@ const promise3 = getAlumniById(3)
 const promise4 = getAlumniById(4)
 
 //Promise.all -> un buen compañero, o vamos todos o no va nadie
-// Promise.all([promise1, promise2,promise3, promise4])
-// .then((alumnis) => {
-//     console.log('La resolución de la promesa 1, 2, 3, 4:', alumnis)
-// })
-// .catch(err => {
-//     console.log(err)
-// })
+Promise.all([promise1, promise2,promise3, promise4])
+.then((alumnis) => {
+    console.log('La resolución de la promesa 1, 2, 3, 4:', alumnis)
+})
+.catch(err => {
+    console.log(err)
+})
 
 //Promise.allSettled -> devuelve todas las promesas INDEPENDIENTE si se haya cumplido o no
 Promise.allSettled([ promise1, promise2, promise3, promise4 ])
