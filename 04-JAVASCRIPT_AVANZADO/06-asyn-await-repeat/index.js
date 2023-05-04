@@ -72,3 +72,39 @@ const getData = async (id) => {
 }
 
 getData(0)
+
+const obtenerTiempoRuta = (id) => {
+    // AQUÍ VA LA SOLUCIÓN
+setTimeout(() => {
+  let tiempos = [
+      {
+          id: 1,
+          code: "10AB",
+          name: 'Laguna Triangulo, Lenca, Puerto Montt',
+          tiempo: {
+              ida: 320,
+              vuelta: 260
+          }
+      },
+      {
+          id: 2,
+          code: "14AZ",
+          name: 'Laguna Toro, Sector El Azul, Futaleufu',
+           tiempo: {
+              ida: 240,
+              vuelta: 120
+          }
+      },
+      {
+          id: 3,
+          code: "09AZ",
+          name: 'Parque Don Toribio, Futrono',
+          tiempo: {
+              ida: 180,
+              vuelta: 120
+          }
+      }
+  ] 
+  // AQUÍ VA LA SOLUCIÓN
+  }, 2000)
+} 
