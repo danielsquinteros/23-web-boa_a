@@ -44,8 +44,9 @@ const renderHTML = (title, description, date, imageUrl) => {
 
 
 buttonImageDayNasa.addEventListener('click', async () => {
+    const inputDateNow = document.getElementById('inputDate').value
     try {
-        const respuesta = await fetch('https://api.nasa.gov/planetary/apod?api_key=agNJHv1TPYM346Y4e6cRbyfJik3SwuSaE101mqDb&date=1995-07-15', {
+        const respuesta = await fetch(`https://api.nasa.gov/planetary/apod?api_key=agNJHv1TPYM346Y4e6cRbyfJik3SwuSaE101mqDb&date=${inputDateNow}`, {
             method: "GET"
         })
         const resJson = await respuesta.json()
