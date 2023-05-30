@@ -1,0 +1,19 @@
+{
+  "name": "first-npm",
+  "version": "0.0.0",
+  "description": "Proyecto de clase para alumnos de Chile :) ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Quinteora",
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^2.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
